@@ -1,0 +1,161 @@
+
+/*Resetar a página
+  FOnte da página toda será MontSerrat - site https://fonts.google.com/ */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: boder-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Espaçamento interno de 16px
+   Fundo azul escuro
+   Cor da letra - branca
+   Isso tudo aplicado no Header*/
+header {
+    padding: 16px;
+    background-color: #000080;
+    color:#FFFFFF;
+    font-size: 28px;
+}
+/* Tamanho da fonte em 28px
+   Font-weight serve para não juntar as letras */
+header h1 {
+    font-weight: normal;
+    font-size: 36px;
+}
+
+/*Aplicando nos itens da lista que estão dentro da Nav, e esse dentro do Header
+   Disposição alinhado na vertical
+   Com margim na esquerda de 15px
+   Tamanho da font de 24px*/
+header nav li {
+    display: inline;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/*Aplicando no link dentro do item da lista, dentro da Nav que está dentro do header
+   cor do texto branca
+   Text-decoration é para retirar o sublinhado do texto */
+header nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Align-items deixa os conteudos do container dentro do header alinhados (coloquei baseline mas pode ser center, ...
+  Justify-content mexe no espaçamento dos conteúdos */
+header .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/* quando mexo a altura da imagem, sempre mexe na largura dela, pois mante a mesma proporção */
+.carros-exemplos img {
+    height: 40px;
+}
+
+.carros-exemplos li {
+    display: inline;
+    margin-right: 8px;
+    
+}
+
+section .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom:16px;
+    color:  #000080;
+
+}
+
+section p {
+    margin-bottom:8px;
+}
+
+.loja-carros {
+    margin-right:32px;
+    height: 350px;
+}
+
+.social-link img {
+    height: 24px;
+}
+
+#contact .container {
+    display: block;
+
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/* resize serve para retirar os "tres risquinhos" onde tem espaço para escrever o texto, aqui não permite o usuário alterar o tamanho a área*/
+form textarea {
+    resize: none;
+    height: 60px;
+}
+
+.social-link li {
+    display: inline;
+    margin-right: 2px;
+}
+
+.social-link li a {
+    text-decoration: none;
+}
+
+section h3 {
+    margin-bottom: 10px;
+}
+
+/* cusor -> faz com que o cursor vire "manzinha" ao passar por cima do botão, igual o que acontece no link*/
+form button {
+    background: #000080;
+    color:#FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:#0000db;
+}
+
+input:focus, textarea{
+    outline-color: #000080;
+}
+
+footer {
+    background: #000080;
+    color: #FFFFFF;
+    padding: 16px 0;
+}
+
+
+
